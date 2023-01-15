@@ -1,0 +1,55 @@
+.section-aboutpage {
+    background-image: url(../images/Personal-v2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-aboutpage .group-aboutpage {
+    margin-left: 6rem;
+}
+
+.group-aboutpage .title-aboutpage {
+    font-size: 50px;
+    font-weight: 600;
+    border-bottom: 2px solid #036A93;
+    margin-bottom: .5rem;
+    width: max-content;
+}
+
+.group-aboutpage .email-aboutpage {
+    font-family: 'Poppins', sans-serif;
+}
+
+.group-aboutpage .txt-about-personal {
+    margin-top: 3rem;
+    max-width: 500px;
+    letter-spacing: .5px;
+}
+
+.group-aboutpage .item-aboutpage {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-in-out;
+}
+
+.group-aboutpage .item-aboutpage.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media only screen and (max-width: 500px) {
+    .section-aboutpage {
+        background-image: url(../images/bg-home-mobile.png);
+    }
+    
+    .section-aboutpage .group-aboutpage {
+        margin: 3rem;
+    }
+
+    .group-aboutpage .title-aboutpage {
+        font-size: 67px;
+    }
+}

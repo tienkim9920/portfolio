@@ -1,0 +1,73 @@
+.section-homepage {
+    background-image: url(../images/bg-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-homepage .group-homepage {
+    margin-left: 6rem;
+}
+
+.group-homepage .title-homepage {
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.group-homepage .item-homepage {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-in-out;
+}
+
+.group-homepage .item-homepage.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.title-homepage .sub {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.group-homepage .job-homepage {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .3rem;
+}
+
+.box-resume-homepage {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.box-resume-homepage .btn-homepage {
+    letter-spacing: .1rem;
+    padding: .6rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.box-resume-homepage .btn-homepage:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media only screen and (max-width: 500px) {
+    .section-homepage {
+        background-image: url(../images/bg-home-mobile.png);
+    }
+    
+    .section-homepage .group-homepage {
+        margin: 3rem;
+    }
+
+    .group-homepage .title-homepage {
+        font-size: 67px;
+    }
+}
