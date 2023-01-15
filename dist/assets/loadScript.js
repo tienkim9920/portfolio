@@ -22,12 +22,18 @@ const handleActiveNavbar = (index) => {
 }
 
 const gotoComponent = (name, index) => {
+  document.getElementById('homepage').classList.add('d-none');
+  document.getElementById('aboutpage').classList.add('d-none');
+  document.getElementById('resumepage').classList.add('d-none');
   if (name === HOME) {
-    loadScript(HOME_PAGE, "body");
+    document.getElementById('homepage').classList.remove('d-none');
+    loadPage('item-homepage');
   } else if (name === ABOUT) {
-    loadScript(ABOUT_PAGE, "body");
+    document.getElementById('aboutpage').classList.remove('d-none');
+    loadPage('item-aboutpage');
   } else if (name === RESUME) {
-    loadScript(RESUME_PAGE, "body");
+    document.getElementById('resumepage').classList.remove('d-none');
+    loadPage('item-resumepage');
   }
   handleActiveNavbar(index);
 };

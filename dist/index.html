@@ -9,7 +9,11 @@
     <script>
         function myFunction() {
             loadScript("./components/header.html", "header");
-            loadScript("./components/homepage.html", "body");
+            loadScript("./components/homepage.html", "homepage");
+            loadScript("./components/aboutpage.html", "aboutpage");
+            loadScript("./components/resumepage.html", "resumepage");
+            document.getElementById('aboutpage').classList.add('d-none');
+            document.getElementById('resumepage').classList.add('d-none');
         }
       </script>
     <title>Portfolio (2022 - 2023)</title>
@@ -17,7 +21,9 @@
 <body onload="myFunction()">
     <div class="wrapper-portfolio">
         <div class="header" id="header"></div>
-        <div id="body"></div>
+        <div id="homepage"></div>
+        <div id="aboutpage"></div>
+        <div id="resumepage"></div>
     </div>
     <script src="./assets/loadScript.js"></script>
 </body>
