@@ -1,5 +1,4 @@
 .section-aboutpage {
-    background-image: url(../images/Personal-v2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -8,7 +7,7 @@
 }
 
 .section-aboutpage .group-aboutpage {
-    margin-left: 6rem;
+    padding-left: 6rem;
 }
 
 .group-aboutpage .title-aboutpage {
@@ -40,13 +39,27 @@
     transform: translateX(0);
 }
 
+.group-aboutpage .txt-call-phone {
+    margin-top: 3rem;
+    letter-spacing: .5px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.group-aboutpage .image-call-phone {
+    width: 20px;
+    height: 15px;
+}
+
 @media only screen and (max-width: 500px) {
     .section-aboutpage {
-        background-image: url(../images/bg-home-mobile.png);
+        background-position: center;
     }
     
     .section-aboutpage .group-aboutpage {
-        margin: 3rem;
+        padding: 2rem;
     }
 
     .group-aboutpage .title-aboutpage {

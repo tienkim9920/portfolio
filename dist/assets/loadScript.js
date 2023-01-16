@@ -5,38 +5,32 @@ const HOME = "home";
 const ABOUT = "about";
 const RESUME = "resume";
 
-const handleActiveNavbar = (index) => {
-  // Navbar Laptop
-  const itemsHeader = document.getElementsByClassName('items-header');
-  for (let i = 0; i < itemsHeader.length; i++) {
-    itemsHeader[i].classList.remove('active');
-  }
-  itemsHeader[index].classList.add('active');
+// const handleActiveNavbar = (index) => {
+//   // Navbar Laptop
+//   const itemsHeader = document.getElementsByClassName('items-header');
+//   for (let i = 0; i < itemsHeader.length; i++) {
+//     itemsHeader[i].classList.remove('active');
+//   }
+//   itemsHeader[index].classList.add('active');
 
-  // Navbar Mobile
-  const itemsHeaderIcon = document.getElementsByClassName('items-header-icon');
-  for (let i = 0; i < itemsHeaderIcon.length; i++) {
-    itemsHeaderIcon[i].classList.remove('active');
-  }
-  itemsHeaderIcon[index].classList.add('active');
-}
+//   // Navbar Mobile
+//   const itemsHeaderIcon = document.getElementsByClassName('items-header-icon');
+//   for (let i = 0; i < itemsHeaderIcon.length; i++) {
+//     itemsHeaderIcon[i].classList.remove('active');
+//   }
+//   itemsHeaderIcon[index].classList.add('active');
+// }
 
-const gotoComponent = (name, index) => {
-  document.getElementById('homepage').classList.add('d-none');
-  document.getElementById('aboutpage').classList.add('d-none');
-  document.getElementById('resumepage').classList.add('d-none');
-  if (name === HOME) {
-    document.getElementById('homepage').classList.remove('d-none');
-    loadPage('item-homepage');
-  } else if (name === ABOUT) {
-    document.getElementById('aboutpage').classList.remove('d-none');
-    loadPage('item-aboutpage');
-  } else if (name === RESUME) {
-    document.getElementById('resumepage').classList.remove('d-none');
-    loadPage('item-resumepage');
-  }
-  handleActiveNavbar(index);
-};
+// const gotoComponent = (name, index) => {
+//   if (name === HOME) {
+//     loadPage('item-homepage');
+//   } else if (name === ABOUT) {
+//     loadPage('item-aboutpage');
+//   } else if (name === RESUME) {
+//     loadPage('item-resumepage');
+//   }
+//   handleActiveNavbar(index);
+// };
 
 function loadScript(component, id) {
   fetch(component)

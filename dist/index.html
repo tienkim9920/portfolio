@@ -6,25 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/avt.png">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/slider.css">
     <script>
         function myFunction() {
-            loadScript("./components/header.html", "header");
             loadScript("./components/homepage.html", "homepage");
             loadScript("./components/aboutpage.html", "aboutpage");
             loadScript("./components/resumepage.html", "resumepage");
-            document.getElementById('aboutpage').classList.add('d-none');
-            document.getElementById('resumepage').classList.add('d-none');
         }
       </script>
     <title>Portfolio (2022 - 2023)</title>
 </head>
 <body onload="myFunction()">
     <div class="wrapper-portfolio">
-        <div class="header" id="header"></div>
-        <div id="homepage"></div>
-        <div id="aboutpage"></div>
-        <div id="resumepage"></div>
+        <div class="section-header">
+            <div class="group-header">
+                <div class="items-header active" id="homeId">Home</div>
+                <div class="items-header" id="aboutId">About</div>
+                <div class="items-header" id="resumeId">Resume</div>
+        
+                <div class="items-header-icon active" id="homeMobileId"><img class="icon-header" src="./images/ic-home.png" /></div>
+                <div class="items-header-icon" id="aboutMobileId"><img class="icon-header" src="./images/ic-user.png" /></div>
+                <div class="items-header-icon" id="resumeMobileId"><img class="icon-header" src="./images/ic-portfolio.png" /></div>
+            </div>
+        </div>
+        <div id="slider" class="slider">
+            <div class="slider-content">
+                <div class="slider-content-wrapper">
+                    <div class="slider-content__item image-1"><div id="homepage"></div></div>
+                    <div class="slider-content__item image-2"><div id="aboutpage"></div></div>
+                    <div class="slider-content__item image-3"><div id="resumepage"></div></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="./assets/loadScript.js"></script>
+    <script src="../dist/assets/loadScript.js"></script>
+    <script src="../dist/assets/slider.js"></script>
 </body>
 </html>

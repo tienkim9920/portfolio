@@ -1,5 +1,4 @@
 .section-resumepage {
-    background-image: url(../images/bg-resume.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -221,7 +220,8 @@
 
 @media only screen and (max-width: 500px) {
     .section-resumepage {
-        padding: 6rem 2rem 4rem;
+        padding: 15rem 2rem 4rem;
         row-gap: 2rem;
+        margin-top: 100vh;
     }
 }

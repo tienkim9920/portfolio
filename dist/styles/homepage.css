@@ -1,5 +1,4 @@
 .section-homepage {
-    background-image: url(../images/bg-home.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -8,7 +7,7 @@
 }
 
 .section-homepage .group-homepage {
-    margin-left: 6rem;
+    padding-left: 6rem;
 }
 
 .group-homepage .title-homepage {
@@ -59,12 +58,8 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .section-homepage {
-        background-image: url(../images/bg-home-mobile.png);
-    }
-    
     .section-homepage .group-homepage {
-        margin: 3rem;
+        padding: 0 2rem;
     }
 
     .group-homepage .title-homepage {

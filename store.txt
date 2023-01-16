@@ -1,0 +1,9 @@
+<!-- <body onload="myFunction()">
+    <div class="wrapper-portfolio">
+        <div class="header" id="header"></div>
+        <div id="homepage"></div>
+        <div id="aboutpage"></div>
+        <div id="resumepage"></div>
+    </div>
+    <script src="./assets/loadScript.js"></script>
+</body> -->
