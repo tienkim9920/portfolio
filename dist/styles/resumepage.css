@@ -220,7 +220,7 @@
 
 @media only screen and (max-width: 500px) {
     .section-resumepage {
-        padding: 15rem 2rem 4rem;
+        padding: 22rem 2rem 4rem;
         row-gap: 2rem;
         margin-top: 100vh;
     }
